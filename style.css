@@ -32,6 +32,18 @@ body {
     letter-spacing: 2px;
 }
 
+.main-title-image {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.main-title-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .season-selector,
 .week-selector {
     margin-bottom: 24px;
