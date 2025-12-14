@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冬2週目 - Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="history.back()">← 戻る</button>
+        <h1 class="page-title">冬2週目 ❄️</h1>
+        
+        <!-- 食材 -->
+        <div class="category">
+            <div class="category-title">🥩 食材</div>
+            <div class="item-list" id="ingredients">
+                <div class="item">
+                    <input type="checkbox" id="item1" onchange="toggleItem(this)">
+                    <label for="item1">鶏もも肉 3枚（750g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item2" onchange="toggleItem(this)">
+                    <label for="item2">豚こま切れ肉 400g</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item3" onchange="toggleItem(this)">
+                    <label for="item3">塩さばの切り身（or 生さば） 半身2枚（300g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item4" onchange="toggleItem(this)">
+                    <label for="item4">たらの切り身 2〜3切れ（240g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item5" onchange="toggleItem(this)">
+                    <label for="item5">キャベツ 1/2個（500g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item6" onchange="toggleItem(this)">
+                    <label for="item6">きゅうり 1本（100g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item7" onchange="toggleItem(this)">
+                    <label for="item7">大根 1/2本（500g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item8" onchange="toggleItem(this)">
+                    <label for="item8">玉ねぎ 1個（200g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item9" onchange="toggleItem(this)">
+                    <label for="item9">長ねぎ 1本（100g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item10" onchange="toggleItem(this)">
+                    <label for="item10">にんじん 1本（150g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item11" onchange="toggleItem(this)">
+                    <label for="item11">白菜 1/4個（500g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item12" onchange="toggleItem(this)">
+                    <label for="item12">もやし 1袋（200g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item13" onchange="toggleItem(this)">
+                    <label for="item13">えのき 1袋（100g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item14" onchange="toggleItem(this)">
+                    <label for="item14">しいたけ 4個（80g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item15" onchange="toggleItem(this)">
+                    <label for="item15">かに風味かまぼこ 3本（30g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item16" onchange="toggleItem(this)">
+                    <label for="item16">ハム 4枚（40g）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item17" onchange="toggleItem(this)">
+                    <label for="item17">コーン水煮 50g</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item18" onchange="toggleItem(this)">
+                    <label for="item18">うどん（冷凍or冷蔵） 1〜2玉</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 常備食材 -->
+        <div class="category">
+            <div class="category-title">🍚 常備食材</div>
+            <div class="item-list" id="staples">
+                <div class="item">
+                    <input type="checkbox" id="staple1" onchange="toggleItem(this)">
+                    <label for="staple1">米（ごはん）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple2" onchange="toggleItem(this)">
+                    <label for="staple2">だしパック または 顆粒だしの素</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple3" onchange="toggleItem(this)">
+                    <label for="staple3">炒りごま（白）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple4" onchange="toggleItem(this)">
+                    <label for="staple4">すりごま（白）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple5" onchange="toggleItem(this)">
+                    <label for="staple5">わかめ（乾燥）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple6" onchange="toggleItem(this)">
+                    <label for="staple6">薄力粉</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple7" onchange="toggleItem(this)">
+                    <label for="staple7">パン粉</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple8" onchange="toggleItem(this)">
+                    <label for="staple8">刻みのり（焼きのりをちぎってもOK）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple9" onchange="toggleItem(this)">
+                    <label for="staple9">米油（またはサラダ油）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple10" onchange="toggleItem(this)">
+                    <label for="staple10">ごま油</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="staple11" onchange="toggleItem(this)">
+                    <label for="staple11">バター</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 調味料 -->
+        <div class="category">
+            <div class="category-title">🧂 調味料</div>
+            <div class="item-list" id="seasonings">
+                <div class="item">
+                    <input type="checkbox" id="seasoning1" onchange="toggleItem(this)">
+                    <label for="seasoning1">砂糖</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning2" onchange="toggleItem(this)">
+                    <label for="seasoning2">塩</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning3" onchange="toggleItem(this)">
+                    <label for="seasoning3">酢</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning4" onchange="toggleItem(this)">
+                    <label for="seasoning4">しょうゆ</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning5" onchange="toggleItem(this)">
+                    <label for="seasoning5">みそ</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning6" onchange="toggleItem(this)">
+                    <label for="seasoning6">みりん</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning7" onchange="toggleItem(this)">
+                    <label for="seasoning7">酒</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning8" onchange="toggleItem(this)">
+                    <label for="seasoning8">マヨネーズ</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning9" onchange="toggleItem(this)">
+                    <label for="seasoning9">鶏がらスープの素（顆粒）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning10" onchange="toggleItem(this)">
+                    <label for="seasoning10">コンソメ（顆粒）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning11" onchange="toggleItem(this)">
+                    <label for="seasoning11">おろしにんにく（チューブ）</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="seasoning12" onchange="toggleItem(this)">
+                    <label for="seasoning12">カレーパウダー</label>
+                </div>
+            </div>
+        </div>
+
+        <button class="reset-button" onclick="resetList()">リセット</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
