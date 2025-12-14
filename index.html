@@ -10,44 +10,30 @@
     <div class="container">
         <h1 class="main-title">Shopping List</h1>
         
-        <div class="week-list">
-            <div class="week-item" onclick="location.href='spring-week1.html'">
-                春1週目
-            </div>
-            <div class="week-item" onclick="location.href='spring-week2.html'">
-                春2週目
-            </div>
-            <div class="week-item" onclick="location.href='spring-week3.html'">
-                春3週目
-            </div>
-            <div class="week-item" onclick="location.href='summer-week1.html'">
-                夏1週目
-            </div>
-            <div class="week-item" onclick="location.href='summer-week2.html'">
-                夏2週目
-            </div>
-            <div class="week-item" onclick="location.href='summer-week3.html'">
-                夏3週目
-            </div>
-            <div class="week-item" onclick="location.href='autumn-week1.html'">
-                秋1週目
-            </div>
-            <div class="week-item" onclick="location.href='autumn-week2.html'">
-                秋2週目
-            </div>
-            <div class="week-item" onclick="location.href='autumn-week3.html'">
-                秋3週目
-            </div>
-            <div class="week-item" onclick="location.href='winter-week1.html'">
-                冬1週目
-            </div>
-            <div class="week-item" onclick="location.href='winter-week2.html'">
-                冬2週目
-            </div>
-            <div class="week-item" onclick="location.href='winter-week3.html'">
-                冬3週目
-            </div>
+        <div class="season-selector">
+            <label for="season-select" class="selector-label">季節を選択</label>
+            <select id="season-select" class="season-dropdown" onchange="updateWeeks()">
+                <option value="">季節を選んでください</option>
+                <option value="spring">春</option>
+                <option value="summer">夏</option>
+                <option value="autumn">秋</option>
+                <option value="winter">冬</option>
+            </select>
+        </div>
+
+        <div class="week-selector" id="week-selector" style="display: none;">
+            <label for="week-select" class="selector-label">週を選択</label>
+            <select id="week-select" class="week-dropdown" onchange="goToWeek()">
+                <option value="">週を選んでください</option>
+            </select>
+        </div>
+
+        <div class="decorative-element">
+            <div class="leaf">🌿</div>
+            <div class="sparkle">✨</div>
         </div>
     </div>
+
+    <script src="index-script.js"></script>
 </body>
 </html>

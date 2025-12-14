@@ -28,6 +28,10 @@ function toggleItem(checkbox) {
     
     if (checkbox.checked) {
         item.classList.add('checked');
+        // チェック時の軽い振動（対応デバイスのみ）
+        if (navigator.vibrate) {
+            navigator.vibrate(50);
+        }
     } else {
         item.classList.remove('checked');
     }
@@ -61,5 +65,10 @@ function resetList() {
         
         const pageName = getPageName();
         localStorage.removeItem(pageName);
+        
+        // リセット時の軽い振動（対応デバイスのみ）
+        if (navigator.vibrate) {
+            navigator.vibrate([100, 50, 100]);
+        }
     }
 }
