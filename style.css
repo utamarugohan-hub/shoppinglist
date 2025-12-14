@@ -71,33 +71,6 @@ body {
     box-shadow: 0 0 0 3px rgba(196, 164, 132, 0.1);
 }
 
-.decorative-element {
-    text-align: center;
-    margin-top: 40px;
-    opacity: 0.6;
-}
-
-.leaf {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-    animation: gentle-bounce 3s ease-in-out infinite;
-}
-
-.sparkle {
-    font-size: 1rem;
-    animation: twinkle 2s ease-in-out infinite alternate;
-}
-
-@keyframes gentle-bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-
-@keyframes twinkle {
-    0% { opacity: 0.6; }
-    100% { opacity: 1; }
-}
-
 /* 買い物リストページのスタイル */
 .page-title {
     text-align: center;
